@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Heart Disease Predictor</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="login">
+        <h1>Heart Disease</h1>
+            <h3>Enter the following values to predict whether the patient has heart disease or not</h3>
+
+        <!--Main input for recieving query into our ML Webapp-->
+        <form action="{{ url_for('predict') }}" method = 'POST'>
+            <input type='text' name='Age' placeholder="Enter patient's age" required='required' />
+            <input type='text' name='Gender' placeholder='Enter Gender (1 male, 0 female)' required='required' />
+            <input type='text' name='cp' placeholder='Enter cp' requied='required' />
+            <input type='text' name='trtbps' placeholder='Enter trtbps Level' requied='required' />
+            <input type='text' name='chol' placeholder='Enter chol Level' requied='required' />
+            <input type='text' name='fbs' placeholder='Enter fbs (1 or 0)' requied='required' />
+            <input type='text' name='restecg' placeholder='Enter restecg (1 or 0)' requied='required' />
+            <input type='text' name='thalachh' placeholder='Enter thalachh' requied='required' />
+            <input type='text' name='exng' placeholder='Enter exng (1 or 0)' requied='required' />
+            <input type='text' name='slp' placeholder='Enter slp level' requied='required' />
+            <input type='text' name='caa' placeholder='Enter caa level' requied='required' />
+            <input type='text' name='thall' placeholder='Enter thall level' requied='required' />
+            
+            <button type='submit' class='btn'>PREDICT</button>
+        </form> 
+
+        <br>
+        <br>
+        {{ prediction_text }}
+
+    </div>
+
+
+</body>
+</html>
