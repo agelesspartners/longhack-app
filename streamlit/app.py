@@ -25,7 +25,7 @@ with st.form("values_form"):
         with st.spinner(text="Please wait"):
             # get the inputs, convert to float, and store in a list
             numeric_gender_value = 1 if gender_value == "Male" else 0
-            submitted_values = [numeric_gender_value, age_value, tb_value, db_value, alkphos_value, sgpt_value, sgot_value, tp_value, alb_value, agratio_value]
+            submitted_values = [age_value, tb_value, db_value, alkphos_value, sgpt_value, sgot_value, tp_value, alb_value, agratio_value, numeric_gender_value]
             features_list = [float(i) for i in submitted_values]
 
             # converting the list to an array, reshaping into a 2D array
@@ -33,14 +33,9 @@ with st.form("values_form"):
             features_array = features_array.reshape(-1, len(features_array))
 
             # open the pickle file in the read mode
-            clf = pickle.load(open("liver_disease_logistic_reg.pkl", "rb"))
+            clf = pickle.load(open("streamlit/liver_disease_logistic_reg.pkl", "rb"))
             # make predictions on our new test data
             prediction = clf.predict(features_array)
-
-            st.write("Prediction score:", prediction[0])
-            st.write("Features list:", features_list)
-            #print("Features list:", features_list)
-            #print("Prediction score:", prediction[0])
 
             # show prediction results
             time.sleep(2)
@@ -48,3 +43,8 @@ with st.form("values_form"):
                 st.error("This patient has liver disease.")
             else:
                 st.success("This patient does not have liver disease.")
+
+            st.write("Prediction score:", prediction[0])
+            st.write("Features list:", features_list)
+            # print("Features list:", features_list)
+            # print("Prediction score:", prediction[0])
