@@ -16,7 +16,7 @@ def main():
     st.set_page_config(page_title = "LongHack | Disease prediction")
     st.sidebar.markdown(
         """
-        [<img src="https://static.tildacdn.com/tild6334-3635-4661-b233-373839373665/Longhack_big_lime1.svg?raw=true" style="max-width: 170px">](https://longhack.org/)
+        [<img src=""https://i2.wp.com/agelesspartners.com/wp-content/uploads/2021/10/age-software-logo.jpg" style="max-width: 170px">](https://agelesspartners.com/)
         """,
         unsafe_allow_html=True)
     #st.sidebar.title("Navigation")
@@ -29,8 +29,7 @@ def main():
     st.sidebar.title("")
     st.sidebar.info(
         """
-        This app is built during **Longevity Hackathon** event by **Ageless Partners** team. Learn more at
-        [longhack.org](https://longhack.org/).
+        This app is built by **Ageless Partners** for **biohackers**.
         """
     )
 
