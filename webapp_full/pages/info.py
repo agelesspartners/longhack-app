@@ -5,10 +5,7 @@ def write():
     with st.spinner("Loading About ..."):
         st.markdown(
             """
-
 [<img src="https://i1.wp.com/agelesspartners.com/wp-content/uploads/2020/11/age-logo.jpg" style="max-width: 190px">](https://agelesspartners.com/)
-            ## Information
-
 
 This platform was developed by **Ageless Partners**.
 
