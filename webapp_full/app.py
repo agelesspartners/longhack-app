@@ -13,10 +13,10 @@ PAGES = {
 }
 
 def main():
-    st.set_page_config(page_title = "LongHack | Disease prediction")
+    st.set_page_config(page_title = "Ageless Partners | Disease prediction")
     st.sidebar.markdown(
         """
-        [<img src=""https://i2.wp.com/agelesspartners.com/wp-content/uploads/2021/10/age-software-logo.jpg" style="max-width: 170px">](https://agelesspartners.com/)
+        [<img src=""https://i2.wp.com/agelesspartners.com/wp-content/uploads/2021/10/age-software-logo.jpg" style="max-width: 170px">](https://agelesspartners.com/ageless-software/)
         """,
         unsafe_allow_html=True)
     #st.sidebar.title("Navigation")
