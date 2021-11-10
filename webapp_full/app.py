@@ -6,10 +6,10 @@ import pages.heart
 import pages.drugs
 
 PAGES = {
-    "Liver disease prediction": pages.liver,
-    "Heart disease prediction": pages.heart,
-    "Compounds database": pages.drugs,
-    "Information": pages.info
+    "Information": pages.info,
+    "Compounds Database": pages.drugs,
+    "Liver Disease Prediction": pages.liver,
+    "Heart Disease Prediction": pages.heart,
 }
 
 def main():
