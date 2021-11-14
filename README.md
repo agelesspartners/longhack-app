@@ -1,2 +1,2 @@
-# longhack-app
-Longhack application for web app deployment.
+# Ageless Partners — Longevity Platform
+This application is for longevity and biohacking.
