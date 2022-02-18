@@ -5,22 +5,18 @@ def write():
     with st.spinner("Loading About ..."):
         st.markdown(
             """
-[<img src="https://i1.wp.com/agelesspartners.com/wp-content/uploads/2020/11/age-logo.jpg" style="max-width: 190px">](https://agelesspartners.com/)
 
-This platform was developed by **Ageless Partners**.
+The Ageless Platform is a biohacking tool to empower individuals. It includes:
 
-Ageless Partners brings together aging researchers, developers, and entrepreneurs to build new tools, 
-raise awareness, and attract talent to the field.
-
-Learn more about Ageless Partners at [www.agelesspartners.com](https://agelesspartners.com/).
+* Compounds database - check the change in life expectancy for given compound based on studying other species.
+* Liver Disease Prediction - check if you may have liver disease.
+* Hearth Disease Prediction - check if you may have heart disease.
 
 ---
 
-  **Ageless Partners Team**
+  **Ageless Platform Core Contributors**
   * [Jason C. Mercurio, MFE](https://www.linkedin.com/in/jasonmercurio/)
   * [Daniel Popoola](https://www.linkedin.com/in/daniel-popoola-984233140/)
-  * [Diogo Pinto Flórido](https://www.linkedin.com/in/diogopintof/)
-  * [Snega R](https://www.linkedin.com/in/snega-r-2809a11a9/)
 
 """,
         unsafe_allow_html=True)
