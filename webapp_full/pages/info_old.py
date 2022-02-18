@@ -15,6 +15,8 @@ raise awareness, and attract talent to the field.
 
 Learn more about the event at [longhack.org](https://longhack.org/).
 
+
+
 ---
 
 [<img src="https://i1.wp.com/agelesspartners.com/wp-content/uploads/2020/11/age-logo.jpg" style="max-width: 150px">](https://agelesspartners.com/)
@@ -34,3 +36,14 @@ Learn more about the event at [longhack.org](https://longhack.org/).
 
 """,
         unsafe_allow_html=True)
+
+
+2-17-2022
+[<img src="https://i1.wp.com/agelesspartners.com/wp-content/uploads/2020/11/age-logo.jpg" style="max-width: 190px">](https://agelesspartners.com/)
+
+This platform was developed by **Ageless Partners**.
+
+Ageless Partners brings together aging researchers, developers, and entrepreneurs to build new tools, 
+raise awareness, and attract talent to the field.
+
+Learn more about Ageless Partners at [www.agelesspartners.com](https://agelesspartners.com/).
