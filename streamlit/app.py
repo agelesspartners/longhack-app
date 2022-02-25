@@ -33,10 +33,10 @@ with st.form("values_form"):
             features_array = features_array.reshape(-1, len(features_array))
 
             # open the pickle file in the read mode
-            clf = pickle.load(open("streamlit/liver_disease_logistic_reg.pkl", "rb"))
+            clf = pickle.load(open("liverdisease_svc_kernel.pkl", "rb"))
             # make predictions on our new test data
             prediction = clf.predict(features_array)
-
+            
             # show prediction results
             time.sleep(2)
             if prediction[0] == 1:
