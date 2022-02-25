@@ -58,7 +58,7 @@ def write():
 
                     # open the pickle file in the read mode
                     path = os.path.dirname(__file__)
-                    my_file = path + '/models/liver_disease_logistic_reg.pkl'
+                    my_file = path + '/models/liverdisease_svc_kernel.pkl'
                     # clf = pickle.load(open("pages/models/liver_disease_logistic_reg.pkl", "rb"))
                     clf = pickle.load(open(my_file, "rb"))
                     # make predictions on our new test data

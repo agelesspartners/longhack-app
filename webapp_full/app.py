@@ -13,14 +13,16 @@ PAGES = {
 }
 
 def main():
+    
     st.set_page_config(page_title = "Ageless Partners | Disease prediction")
+
     st.sidebar.markdown(
         """
-        [<img src="https://i2.wp.com/agelesspartners.com/wp-content/uploads/2021/10/age-software-logo.jpg" style="max-width: 170px">](https://agelesspartners.com/ageless-software/)
+        [<img src="https://i2.wp.com/agelesspartners.com/wp-content/uploads/2021/10/age-software-logo.jpg" style="max-width: 302px" >](https://agelesspartners.com/ageless-software/)
         """,
         unsafe_allow_html=True)
     #st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("", list(PAGES.keys()))
+    selection = st.sidebar.selectbox("", list(PAGES.keys()))
 
     page = PAGES[selection]
     with st.spinner(f"Loading {selection} ..."):
