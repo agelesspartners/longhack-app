@@ -7,7 +7,7 @@ import pickle
 app = Flask(__name__)
 
 #open the pickle file in the read mode
-clf = pickle.load(open('liverdisease_logistic_reg.pkl', 'rb'))
+clf = pickle.load(open('liverdisease_svc_kernel.pkl', 'rb'))
 
 #define app route for the default page. i.e. root node for the API url
 #whenever a user visits our app domain, at the given route, execute the home() function
